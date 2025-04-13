@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NELLOR</title>
-  <link rel="stylesheet" href="style.css" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1 class="logo">NELLOR</h1>
-      <nav class="nav-links">
-        <a href="#menu">المنيو</a>
-        <a href="#contact">تواصل معنا</a>
-        <a href="#reservation">حجز طاولة</a>
-      </nav>
-    </div>
+    <nav>
+      <a href="#menu">المنيو</a>
+      <a href="#contact">تواصل معنا</a>
+      <a href="#book">حجز طاولة</a>
+    </nav>
+    <h1>NELLOR</h1>
   </header>
-
   <main>
-    <section id="hero">
+    <section class="hero">
       <h2>تجربة طعام لا تُنسى</h2>
       <p>نكهات آسيوية وإيطالية بجودة نيلور</p>
     </section>
@@ -35,16 +32,14 @@
       <p>راسلنا على إنستقرام أو واتساب</p>
     </section>
 
-    <section id="reservation">
+    <section id="book">
       <h2>احجز طاولة</h2>
-      <button onclick="reserveTable()">احجز الآن</button>
+      <button onclick="alert('تم إرسال طلب الحجز')">احجز الآن</button>
     </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 NELLOR. جميع الحقوق محفوظة.</p>
+    <p>© 2025 NELLOR - جميع الحقوق محفوظة.</p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
