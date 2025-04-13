@@ -37,6 +37,10 @@
       text-decoration: none;
       color: #333;
       font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #eab308;
     }
     main {
       padding: 40px 20px;
@@ -54,6 +58,19 @@
       font-size: 16px;
       line-height: 1.6;
     }
+    button {
+      padding: 10px 20px;
+      background-color: #eab308;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #d1a307;
+    }
   </style>
 </head>
 <body>
@@ -69,17 +86,26 @@
     <section id="menu">
       <h2>المنيو</h2>
       <p>قائمة الطعام الخاصة بمطعم نيلور.</p>
+      <button onclick="alert('سيتم عرض المنيو قريباً')">عرض القائمة</button>
     </section>
 
     <section id="contact">
       <h2>تواصل معنا</h2>
       <p>تفاصيل التواصل سيتم إضافتها هنا.</p>
+      <button onclick="window.location.href='mailto:contact@nellor.sa'">راسلنا الآن</button>
     </section>
 
     <section id="book">
       <h2>حجز طاولة</h2>
       <p>احجز طاولتك الآن بسهولة.</p>
+      <button onclick="bookTable()">احجز الآن</button>
     </section>
   </main>
+
+  <script>
+    function bookTable() {
+      alert("تم استقبال طلب الحجز، سيتم التواصل معك قريباً.");
+    }
+  </script>
 </body>
 </html>
