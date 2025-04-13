@@ -17,4 +17,8 @@ function reserveTable() {
   if (confirmed) {
     window.open("https://wa.me/966500000000", "_blank");
   }
+  {
+    console.log("تم تحميل السكربت بنجاح!");
+  }
 }
+
