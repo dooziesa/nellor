@@ -1,111 +1,49 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NELLOR</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #ffffff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    nav {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      display: flex;
-      gap: 15px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #eab308;
-    }
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    section h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    section p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #eab308;
-      border: none;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #d1a307;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#menu">المنيو</a>
-      <a href="#contact">تواصل معنا</a>
-      <a href="#book">حجز طاولة</a>
-    </nav>
-    <h1>NELLOR</h1>
+    <div class="container">
+      <h1 class="logo">NELLOR</h1>
+      <nav class="nav-links">
+        <a href="#menu">المنيو</a>
+        <a href="#contact">تواصل معنا</a>
+        <a href="#reservation">حجز طاولة</a>
+      </nav>
+    </div>
   </header>
+
   <main>
+    <section id="hero">
+      <h2>تجربة طعام لا تُنسى</h2>
+      <p>نكهات آسيوية وإيطالية بجودة نيلور</p>
+    </section>
+
     <section id="menu">
       <h2>المنيو</h2>
-      <p>قائمة الطعام الخاصة بمطعم نيلور.</p>
-      <button onclick="alert('سيتم عرض المنيو قريباً')">عرض القائمة</button>
+      <p>سنضيف قائمة الطعام هنا</p>
     </section>
 
     <section id="contact">
       <h2>تواصل معنا</h2>
-      <p>تفاصيل التواصل سيتم إضافتها هنا.</p>
-      <button onclick="window.location.href='mailto:contact@nellor.sa'">راسلنا الآن</button>
+      <p>راسلنا على إنستقرام أو واتساب</p>
     </section>
 
-    <section id="book">
-      <h2>حجز طاولة</h2>
-      <p>احجز طاولتك الآن بسهولة.</p>
-      <button onclick="bookTable()">احجز الآن</button>
+    <section id="reservation">
+      <h2>احجز طاولة</h2>
+      <button onclick="reserveTable()">احجز الآن</button>
     </section>
   </main>
 
-  <script>
-    function bookTable() {
-      alert("تم استقبال طلب الحجز، سيتم التواصل معك قريباً.");
-    }
-  </script>
+  <footer>
+    <p>&copy; 2025 NELLOR. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
